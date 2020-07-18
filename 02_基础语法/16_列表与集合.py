@@ -32,6 +32,7 @@ list1 = ['physics', 'chemistry', 1997, 2000]
 list2 = [1, 2, 3, 4, 5, 6, 7]
 
 print(list1[0])
+#分片的使用
 print(list2[0:6])
 
 # 更新列表
@@ -82,3 +83,6 @@ Python包含以下方法:
 9	list.sort(cmp=None, key=None, reverse=False)
 对原列表进行排序
 '''
+
+print("----------------------------------")
+#  集合
