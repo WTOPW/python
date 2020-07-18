@@ -3,19 +3,20 @@
 
 '''
     语法：
-        if  条件表达式 :
-            代码块
-        elif 条件表达式 :
-            代码块
-        elif 条件表达式 :
-            代码块
-        elif 条件表达式 :
-            代码块
-        else :
-            代码块
+    if condition_1:
+        statement_block_1
+    elif condition_2:
+        statement_block_2
+    else:
+        statement_block_3
+    如果 "condition_1" 为 True 将执行 "statement_block_1" 块语句
+    如果 "condition_1" 为False，将判断 "condition_2"
+    如果"condition_2" 为 True 将执行 "statement_block_2" 块语句
+    如果 "condition_2" 为False，将执行"statement_block_3"块语句
     注意：
-        只有一个代码块被执行
-        dead   code : 条件执行没有必要
+        1、每个条件后面要使用冒号 :，表示接下来是满足条件后要执行的语句块。
+        2、使用缩进来划分语句块，相同缩进数的语句在一起组成一个语句块。
+        3、在Python中没有switch – case语句
 '''
 
 
@@ -52,4 +53,12 @@ elif num_year >= 3 :
 
 
 
-
+'''
+操作符	    描述
+<	        小于
+<=	        小于或等于
+>	        大于
+>=	        大于或等于
+==	        等于，比较两个值是否相等
+!=	        不等于
+'''
