@@ -28,18 +28,9 @@ import 语句
         import module1[, module2[,... moduleN]
     当解释器遇到 import 语句，如果模块在当前的搜索路径就会被导入。
     搜索路径是一个解释器会先进行搜索的所有目录的列表。如想要导入模块 support，需要把命令放在脚本的顶端：
+code02
 """
 
-
-def print_func(par):
-    print("Hello : ", par)
-    return
-
-
-# 导入模块
-# import support
-# 现在可以调用模块里包含的函数了
-# support.print_func("Runoob")
 
 """
 一个模块只会被导入一次，不管你执行了多少次import。这样可以防止导入模块被一遍又一遍地执行。
@@ -186,13 +177,6 @@ sound/                          顶层包
 目录只有包含一个叫做 __init__.py 的文件才会被认作是一个包，主要是为了避免一些滥俗的名字（比如叫做 string）不小心的影响搜索路径中的有效模块。
 最简单的情况，放一个空的 :file:__init__.py就可以了。当然这个文件中也可以包含一些初始化代码或者为（将在后面介绍的） __all__变量赋值。
 用户可以每次只导入一个包里面的特定模块，比如:
+code01  代码
+
 """
-import logging as log
-
-
-def GetLogger():
-    logger = log.getLogger()
-    fh = log.FileHandler("log.txt")
-    logger.addHandler(fh)
-    return logger
-
