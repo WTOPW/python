@@ -89,8 +89,8 @@ print('常量 PI 的值近似为：%5.3f。' % math.pi)
     Python提供了 input() 内置函数从标准输入读入一行文本，默认的标准输入是键盘。
     input 可以接收一个Python表达式作为输入，并将运算结果返回。
 """
-str = input("请输入：");
-print("你输入的内容是: ", str)
+#str = input("请输入：");
+#print("你输入的内容是: ", str)
 
 """
 读和写文件
@@ -117,11 +117,16 @@ ab+	    以二进制格式打开一个文件用于追加。如果该文件已存
 
 #  详细见code
 import os
-with open("D:/python/python/02_基础语法/22_输入和输出/code01/open.txt","w") as f :
-    f.write("hello")
+with open("D:/python/python/02_基础语法/22_输入和输出/code01/open.txt","r") as f :
+    f.write("hello"+"\n")
     f.close()
 
 with open("D:/python/python/02_基础语法/22_输入和输出/code01/open.txt","r") as f :
-    str =f.readline()
-    print(str)
+    str1=f.read()
+    str2=f.readline()
+    str3=f.readlines()
+    print(str1)
+    print(str2)
+    print(str3)
     f.close()
+
