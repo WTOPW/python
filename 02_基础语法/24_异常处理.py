@@ -21,8 +21,6 @@ try/except
 
 """
 
-
-"""
 while True:
     try:
         x = int(input("请输入一个数字: "))
@@ -38,8 +36,6 @@ try :
 # 文件不存在
 except FileNotFoundError:
     print("error!")
-"""
-
 
 
 """
@@ -59,7 +55,7 @@ except (RuntimeError, TypeError, NameError):
 
 """
 
-"""
+
 import os
 import sys
 try :
@@ -71,7 +67,7 @@ except Exception as e: # 把错误存到e变量中
     with open("error.txt","a+",encoding="utf-8") as f:
         f.write(str(e))
         f.close()
-"""
+
 
 """
     BaseException 所有异常的基类
@@ -124,7 +120,7 @@ except Exception as e: # 把错误存到e变量中
 
 # try ...except..finally  强制执行的代码
 
-"""
+
 import os
 import sys
 try :
@@ -138,13 +134,15 @@ except Exception as e: # 把错误存到e变量中
         f.close()
 finally:
     print("I am best one")
-"""
+
 
 """
 try/except...else
 try/except 语句还有一个可选的 else 子句，如果使用这个子句，那么必须放在所有的 except 子句之后。
 
 
+
+"""
 import os
 import sys
 try :
@@ -160,8 +158,6 @@ else: #不报错执行代码
     print("error")
 finally:
     print("I am best one")
-"""
-
 
 
 """
