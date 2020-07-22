@@ -116,3 +116,12 @@ ab+	    以二进制格式打开一个文件用于追加。如果该文件已存
 """
 
 #  详细见code
+import os
+with open("D:/python/python/02_基础语法/22_输入和输出/code01/open.txt","w") as f :
+    f.write("hello")
+    f.close()
+
+with open("D:/python/python/02_基础语法/22_输入和输出/code01/open.txt","r") as f :
+    str =f.readline()
+    print(str)
+    f.close()
